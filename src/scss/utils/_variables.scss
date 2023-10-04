@@ -1,0 +1,34 @@
+// adaptive
+$minWidth: 320;
+$maxWidth: 1920;
+$maxWidthContent: 1300;
+$containerPadding: 15;
+$maxWidthContainer: $maxWidthContent + ($containerPadding * 2);
+
+// breakpoints
+$tablet: em(991.98);
+$mobileMedium: em(767.98);
+$mobileSmall: em(479.98);
+
+// sizes
+$headerHeightLg: rem(130);
+$headerHeightSm: rem(90);
+$burgerLineHeight: 0.21rem;
+
+// transitions
+$transitionBase: cubic-bezier(0.4, 0, 0.2, 1);
+
+// fonts
+$fontSizeMain: 19px;
+$lineHeightMain: 1.8;
+$letterSpacingMain: -0.01em;
+$fontFamilyMain: 'Inter', sans-serif;
+
+:root {
+  // colors
+  --color-primary: #1b3764;
+  --color-secondary: #ffca42;
+  --color-off-white: #f4f8ff;
+  --color-text-main: #969aa0;
+  --color-text-blue: #b4c7e7;
+}
