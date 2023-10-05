@@ -1,0 +1,19 @@
+.logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: normal;
+
+  @media (max-width: $mobileSmall) {
+    transform: scale(0.9);
+  }
+
+  & svg {
+    margin-right: 9px;
+  }
+}
