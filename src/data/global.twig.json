@@ -1,1 +1,20 @@
-{}
+{
+  "socials": [
+    {
+      "icon": "./images/icons.svg#icon-facebook",
+      "link": "https://www.facebook.com/"
+    },
+    {
+      "icon": "./images/icons.svg#icon-twitter",
+      "link": "https://twitter.com/"
+    },
+    {
+      "icon": "./images/icons.svg#icon-linkedin",
+      "link": "https://www.linkedin.com/"
+    },
+    {
+      "icon": "./images/icons.svg#icon-instagram",
+      "link": "https://www.instagram.com/"
+    }
+  ]
+}
