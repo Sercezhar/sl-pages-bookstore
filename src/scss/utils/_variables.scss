@@ -9,10 +9,12 @@ $maxWidthContainer: $maxWidthContent + ($containerPadding * 2);
 $tablet: em(991.98);
 $mobileMedium: em(767.98);
 $mobileSmall: em(479.98);
+$menu: em(1129.98);
 
 // sizes
 $headerHeightLg: rem(130);
-$headerHeightSm: rem(90);
+$headerHeightMd: rem(90);
+$headerHeightSm: rem(70);
 $burgerLineHeight: 0.21rem;
 
 // transitions

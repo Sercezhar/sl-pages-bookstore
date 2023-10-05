@@ -1,4 +1,6 @@
 .button {
+  position: relative;
+  flex-shrink: 0;
   width: 220px;
   height: 65px;
   color: var(--color-primary);
@@ -8,6 +10,28 @@
   letter-spacing: 0.02em;
   font-family: 'Cardo', serif;
   text-transform: capitalize;
+  overflow: hidden;
+
+  &:not(
+      .button--transparent-dark,
+      .button--transparent-white,
+      .button--secondary
+    ):after {
+    content: '';
+    position: absolute;
+    left: -75px;
+    top: -40px;
+    transform: rotate(35deg);
+    width: 50px;
+    height: 130px;
+    background-color: #fff;
+    opacity: 0.5;
+    transition: left 450ms $transitionBase;
+  }
+
+  &:hover::after {
+    left: 120%;
+  }
 
   &--sm {
     width: 180px;
