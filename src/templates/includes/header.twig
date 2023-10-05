@@ -1,30 +1,55 @@
 <header class="header">
-	<div class="header__container">
-		<a class="header__logo" href="./index.html">
-			<img src="./images/logo.png" alt="logo">
-		</a>
+  <div class="header__container">
+    <div class="header__column">
+      {% include './../components/logo.twig' %}
 
-		<nav class="menu">
-			<ul class="menu__list">
-				<li>
-					<a href="./index.html" class="menu__link menu__link--current">Home</a>
-				</li>
-				<li>
-					<a href="#" class="menu__link">Portfolio</a>
-				</li>
-				<li>
-					<a href="#" class="menu__link">About</a>
-				</li>
-				<li>
-					<a href="#" class="menu__link">Contacts</a>
-				</li>
-			</ul>
-		</nav>
+      <ul class="socials" data-da=".menu__wrapper, 479.98">
+        {% for social in socials[:3] %}
+        <li>
+          <a href="{{ social.link }}" class="socials__link {{ class }}">
+            <svg width="16" height="16">
+              <use href="{{ social.icon }}"></use>
+            </svg>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
 
-		<button class="header__burger">
-			<span></span>
-		</button>
+    <div class="menu__backdrop"></div>
 
-		<button data-da=".menu, 767.98" class="header__button" type="button">Get started</button>
-	</div>
+    <div class="menu__wrapper">
+      <nav class="menu">
+        <ul class="menu__list">
+          {% for nav in navigation %}
+          <li>
+            <a
+              href="{{ nav.link }}"
+              class="menu__link
+							{{ nav.isCurrent ? 'menu__link--current' : '' }}"
+              >{{ nav.title }}</a
+            >
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
+
+      <button class="cart" type="button" data-da=".header__buttons, 1129.98, 0">
+        <svg width="24" height="24">
+          <use href="./images/icons.svg#icon-cart"></use>
+        </svg>
+
+        <div class="cart__qty">0</div>
+      </button>
+
+      {% include './../components/button.twig' with {'text': 'Order today',
+      'classes': 'button--sm'} %}
+    </div>
+
+    <div class="header__buttons header__column">
+      <button class="burger">
+        <span></span>
+      </button>
+    </div>
+  </div>
 </header>
