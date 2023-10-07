@@ -30,7 +30,7 @@ body {
   flex-direction: column;
   min-height: 100%;
   color: var(--color-text-main);
-  font-size: $fontSizeMain;
+  @include adaptiveValue('font-size', $fontSizeMain, 14);
   line-height: $lineHeightMain;
   letter-spacing: $letterSpacingMain;
   font-family: $fontFamilyMain;

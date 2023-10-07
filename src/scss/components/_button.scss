@@ -5,6 +5,7 @@
   height: 65px;
   color: var(--color-primary);
   background-color: var(--color-secondary);
+  font-size: 19px;
   font-weight: 700;
   line-height: 1.25;
   letter-spacing: 0.02em;
@@ -15,7 +16,8 @@
   &:not(
       .button--transparent-dark,
       .button--transparent-white,
-      .button--secondary
+      .button--secondary,
+      .button--secondary-white
     ):after {
     content: '';
     position: absolute;
@@ -43,21 +45,24 @@
     background-color: transparent;
     border: 1px solid var(--color-secondary);
   }
-
   &--transparent-white {
     color: #fff;
   }
-
   &--transparent-dark {
     color: var(--color-primary);
   }
 
-  &--secondary {
+  &--secondary,
+  &--secondary-white {
     padding-bottom: 2px;
     width: fit-content;
     height: fit-content;
     font-size: 18px;
     background-color: transparent;
     border-bottom: 1px solid var(--color-primary);
+  }
+  &--secondary-white {
+    color: #fff;
+    border-color: #fff;
   }
 }
