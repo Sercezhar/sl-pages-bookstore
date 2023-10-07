@@ -1,0 +1,138 @@
+.hero {
+  background-color: var(--color-primary);
+
+  &__container {
+    padding-top: 55px;
+    padding-bottom: 115px;
+
+    @media (max-width: $mobileSmall) {
+      padding-top: 35px;
+      padding-bottom: 85px;
+    }
+
+    & img {
+      display: block;
+      width: percent(592, $maxWidthContent);
+      max-width: 592px;
+
+      @media (max-width: $tablet) {
+        margin-bottom: auto;
+      }
+
+      @media (max-width: $mobileMedium) {
+        margin-inline: auto;
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+
+    @media (max-width: $mobileMedium) {
+      justify-content: center;
+    }
+  }
+}
+
+// text content
+.hero-content {
+  &__pretitle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    color: #fff;
+    @include adaptiveValue('font-size', 24, 20);
+    line-height: 1.55;
+    letter-spacing: -0.02em;
+    font-style: italic;
+    font-family: 'Cardo', serif;
+
+    &::before {
+      content: '';
+      display: block;
+      margin-right: 15px;
+      width: 34px;
+      height: 1px;
+      background-color: var(--color-secondary);
+    }
+  }
+
+  & .h1 {
+    margin-bottom: 32px;
+    max-width: 614px;
+  }
+
+  &__text {
+    margin-bottom: 49px;
+    max-width: 575px;
+    color: var(--color-text-blue);
+
+    @media (max-width: $mobileMedium) {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+// buttons
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 37px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 49px;
+  }
+
+  @media (min-width: $mobileMedium) and (max-width: $tablet) {
+    flex-direction: column;
+  }
+
+  @media (max-width: $mobileMedium) {
+    justify-content: center;
+  }
+
+  @media (max-width: $mobileSmall) {
+    flex-direction: column;
+    gap: 28px;
+  }
+}
+
+// details list
+.hero-details {
+  display: flex;
+  @include adaptiveValue('gap', 80, 0);
+
+  @media (max-width: $tablet) {
+    margin-top: 42px;
+  }
+
+  @media (max-width: $tablet) {
+    justify-content: end;
+    gap: 28px;
+  }
+
+  @media (max-width: $mobileMedium) {
+    justify-content: space-evenly;
+    gap: 14px;
+  }
+
+  & .h5 {
+    margin-bottom: 3px;
+  }
+
+  & p {
+    color: var(--color-text-blue);
+    @include adaptiveValue('font-size', 18, 14);
+    line-height: 1.7;
+
+    & span {
+      @media (max-width: $mobileSmall) {
+        display: none;
+      }
+    }
+  }
+}
