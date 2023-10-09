@@ -1,30 +1,3 @@
 {
-  "title": "Home",
-  "navigation": [
-    {
-      "title": "Home",
-      "link": "./index.html",
-      "isCurrent": true
-    },
-    {
-      "title": "Books",
-      "link": "./books.html",
-      "isCurrent": false
-    },
-    {
-      "title": "About",
-      "link": "./about.html",
-      "isCurrent": false
-    },
-    {
-      "title": "Blogs",
-      "link": "./blogs.html",
-      "isCurrent": false
-    },
-    {
-      "title": "Contact",
-      "link": "./contact.html",
-      "isCurrent": false
-    }
-  ]
+  "title": "Home"
 }

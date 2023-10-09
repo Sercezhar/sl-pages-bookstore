@@ -1,4 +1,26 @@
 {
+  "navigation": [
+    {
+      "title": "Home",
+      "link": "./index.html"
+    },
+    {
+      "title": "Books",
+      "link": "./books.html"
+    },
+    {
+      "title": "About",
+      "link": "./about.html"
+    },
+    {
+      "title": "Blogs",
+      "link": "./blogs.html"
+    },
+    {
+      "title": "Contact",
+      "link": "./contact.html"
+    }
+  ],
   "socials": [
     {
       "icon": "./images/icons.svg#icon-facebook",
@@ -15,6 +37,45 @@
     {
       "icon": "./images/icons.svg#icon-instagram",
       "link": "https://www.instagram.com/"
+    }
+  ],
+  "footerPages": [
+    {
+      "title": "Start here",
+      "link": "./index.html"
+    },
+    {
+      "title": "Style guide",
+      "link": "./index.html"
+    },
+    {
+      "title": "404 not found",
+      "link": "./index.html"
+    },
+    {
+      "title": "Licenses",
+      "link": "./index.html"
+    },
+    {
+      "title": "Changelog",
+      "link": "./index.html"
+    }
+  ],
+  "footerContacts": [
+    {
+      "title": "Address",
+      "text": "24 Kingston St, Boston, MA 02111, USA",
+      "link": "https://maps.app.goo.gl/pipT6mRrKKSxM7BJA"
+    },
+    {
+      "title": "Mail",
+      "text": "support@pages.com",
+      "link": "mailto:support@pages.com"
+    },
+    {
+      "title": "Phone",
+      "text": "(+22) 123-4567-900",
+      "link": "tel:(+22)123-4567-900"
     }
   ]
 }
