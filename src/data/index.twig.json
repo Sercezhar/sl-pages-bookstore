@@ -1,3 +1,23 @@
 {
-  "title": "Home"
+  "title": "Home",
+  "books": [
+    {
+      "image": "./images/books/book-1.jpg",
+      "title": "Atomic One’s",
+      "description": "Many variations of passages of Lorem Ipsum willing araise alteration in some form.",
+      "details": {
+        "pages": "498 pages",
+        "length": "9 Hours"
+      }
+    },
+    {
+      "image": "./images/books/book-2.jpg",
+      "title": "The Dark Light",
+      "description": "Many variations of passages of Lorem Ipsum willing araise alteration in some form.",
+      "details": {
+        "pages": "586 pages",
+        "length": "10 Hours"
+      }
+    }
+  ]
 }
