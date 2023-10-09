@@ -1,6 +1,158 @@
 .footer {
   margin-top: auto;
-  padding: 20px 0;
-  color: #fff;
-  background-color: #000;
+  color: var(--color-text-blue);
+  background-color: var(--color-primary);
+
+  &__container {
+    padding-top: 86px;
+    padding-bottom: 23px;
+
+    @media (max-width: $mobileSmall) {
+      padding-top: 66px;
+    }
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 76px;
+    row-gap: 48px;
+    padding-bottom: 77px;
+
+    @media (max-width: $tablet) {
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: $mobileSmall) {
+      padding-bottom: 57px;
+    }
+
+    & .h5 {
+      margin-bottom: 23px;
+      letter-spacing: $letterSpacingMain;
+    }
+  }
+}
+
+// logo column
+.footer-logo {
+  @media (min-width: $mobileSmall) and (max-width: $tablet) {
+    display: flex;
+    gap: 48px;
+  }
+
+  & .logo {
+    margin-bottom: 27px;
+
+    @media (min-width: $mobileSmall) and (max-width: $tablet) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// links
+.footer-links {
+  justify-content: space-between;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns:
+    minmax(auto, 149px)
+    minmax(auto, 194px)
+    minmax(auto, 323px);
+
+  @media (min-width: $tablet) {
+    column-gap: 16px;
+    max-width: 868px;
+  }
+
+  @media (max-width: $mobileMedium) {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 48px;
+  }
+
+  @media (max-width: $mobileSmall) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  // links columns
+  &__column {
+    &:nth-child(1),
+    &:nth-child(2) {
+      @media (max-width: $mobileSmall) {
+        width: 50%;
+      }
+    }
+
+    &:nth-child(3) {
+      @media (min-width: $mobileSmall) and (max-width: $mobileMedium) {
+        grid-area: 2 / 1 / 3 / 3;
+      }
+    }
+
+    & a {
+      @include adaptiveValue('font-size', 18, 14);
+      transition: color 250ms $transitionBase;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+
+    & .li--dots a {
+      line-height: 2.05;
+    }
+  }
+}
+
+// address column
+.footer-address {
+  &__item {
+    display: flex;
+
+    &:nth-child(1) {
+      gap: 14px;
+
+      @media (max-width: $mobileSmall) {
+        text-wrap: balance;
+      }
+    }
+    &:nth-child(2) {
+      @include adaptiveValue('gap', 40, 33);
+    }
+    &:nth-child(3) {
+      @include adaptiveValue('gap', 24, 21);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__title {
+    flex-shrink: 0;
+    color: #fff;
+    @include adaptiveValue('font-size', 18, 14);
+    font-weight: 700;
+    font-family: 'Cardo', serif;
+    letter-spacing: 0.02em;
+  }
+}
+
+// copyright
+.footer-copyright {
+  padding-top: 18px;
+  text-align: center;
+  @include adaptiveValue('font-size', 17, 12);
+  border-top: 1px solid #ffffff33;
+
+  &__link {
+    color: #fff;
+    transition: color 250ms $transitionBase;
+
+    &:hover {
+      color: var(--color-secondary);
+    }
+  }
 }
