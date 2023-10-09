@@ -1,0 +1,36 @@
+<section class="books">
+  <div class="books__container">
+    <h3 class="h3">Author’s Book Includes</h3>
+
+    <ul class="books-list">
+      {% for books in books %}
+      <li class="books-list__item">
+        <img src="{{ books.image }}" alt="book cover" />
+
+        <div class="book-info">
+          <h4 class="book-info__title h4">{{ books.title }}</h4>
+          <p class="book-info__description">
+            {{ books.description }}
+          </p>
+          <ul class="book-info__details">
+            <li class="li--bullet">
+              <div>
+                <h5 class="h5">Pages:</h5>
+                <p>{{ books.details.pages }}</p>
+              </div>
+            </li>
+            <li class="li--bullet">
+              <div>
+                <h5 class="h5">Length:</h5>
+                <p>{{ books.details.length }}</p>
+              </div>
+            </li>
+          </ul>
+          {% include './../components/button.twig' with {'text': 'Order Today',
+          'classes': 'button--transparent-dark order-btn'} %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

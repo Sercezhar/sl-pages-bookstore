@@ -1,0 +1,75 @@
+.books {
+  &__container {
+    @include adaptiveValue('padding-block', 145, 96);
+
+    & .h3 {
+      margin-inline: auto;
+      @include adaptiveValue('margin-bottom', 57, 37);
+
+      text-align: center;
+    }
+  }
+}
+
+.books-list {
+  @media (min-width: $mobileSmall) {
+    display: flex;
+    justify-content: space-between;
+    gap: 64px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 44px;
+
+    @media (max-width: $tablet) {
+      flex-wrap: wrap;
+    }
+
+    &:not(:last-child) {
+      @media (max-width: $mobileSmall) {
+        margin-bottom: 64px;
+      }
+    }
+
+    & img {
+      flex: 1 1 auto;
+      margin-bottom: auto;
+      min-width: 180px;
+      width: 1%;
+      max-width: 300px;
+      box-shadow: 0px 20px 25px rgba(4, 11, 20, 0.08);
+
+      @media (max-width: $tablet) {
+        max-width: 220px;
+      }
+    }
+  }
+}
+
+.book-info {
+  &__title {
+    margin-bottom: 14px;
+  }
+
+  &__description,
+  &__details {
+    @include adaptiveValue('margin-bottom', 30, 20);
+  }
+
+  &__description {
+    max-width: 262px;
+    @include text-truncate-multi-line(3);
+  }
+
+  &__details {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $mobileSmall) {
+      justify-content: space-around;
+    }
+  }
+}
