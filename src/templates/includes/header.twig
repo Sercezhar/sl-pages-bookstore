@@ -6,7 +6,7 @@
       <ul class="socials" data-da=".menu__wrapper, 479.98">
         {% for social in socials[:3] %}
         <li>
-          <a href="{{ social.link }}" class="socials__link {{ class }}">
+          <a href="{{ social.link }}" class="socials__link">
             <svg width="16" height="16">
               <use href="{{ social.icon }}"></use>
             </svg>
@@ -26,7 +26,7 @@
             <a
               href="{{ nav.link }}"
               class="menu__link
-							{{ nav.isCurrent ? 'menu__link--current' : '' }}"
+							{{ nav.title == title ? 'menu__link--current' : '' }}"
               >{{ nav.title }}</a
             >
           </li>
