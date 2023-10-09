@@ -55,6 +55,15 @@
   }
   &--transparent-dark {
     color: var(--color-primary);
+    transition: background-color 250ms $transitionBase;
+
+    &:hover {
+      background-color: rgba(180, 199, 231, 0.15);
+    }
+
+    @media (max-width: $mobileMedium) {
+      width: 100%;
+    }
   }
 
   &--secondary,
