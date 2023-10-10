@@ -33,5 +33,23 @@
       "title": "04",
       "subtitle": "Best Seller Awards"
     }
+  ],
+  "features": [
+    {
+      "index": "01",
+      "text": "Use HDFS & Map Reduce for storing & analyzing data at scale."
+    },
+    {
+      "index": "02",
+      "text": "Consume streaming data using Spark Streaming, Flink, and Storm."
+    },
+    {
+      "index": "03",
+      "text": "Choose an appropriate data storage technology for your application"
+    },
+    {
+      "index": "04",
+      "text": "Analyze non-relational data using HBase, Cassandra, and MongoDB."
+    }
   ]
 }
