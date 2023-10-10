@@ -30,7 +30,7 @@
     min-height: initial;
     @include adaptiveValue('max-height', 210, 110, 768, 320);
     object-position: top 7% left 0;
-    box-shadow: 0 12px 10px rgba(4, 11, 20, 0.15);
+    box-shadow: 0 16px 12px rgba(4, 11, 20, 0.15);
   }
 
   @media (max-width: $mobileSmall) {
@@ -53,8 +53,8 @@
     }
 
     @media (max-width: $mobileSmall) {
-      padding-bottom: 20px;
-      padding-right: 20px;
+      padding-bottom: 16px;
+      padding-right: 16px;
     }
 
     &::after {
@@ -72,7 +72,7 @@
       }
 
       @media (max-width: $mobileSmall) {
-        border-width: 8px;
+        border-width: 6px;
       }
     }
   }
