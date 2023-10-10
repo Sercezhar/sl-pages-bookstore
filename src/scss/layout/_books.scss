@@ -3,7 +3,6 @@
     @include adaptiveValue('padding-block', 145, 96);
 
     & .h3 {
-      margin-inline: auto;
       @include adaptiveValue('margin-bottom', 57, 37);
 
       text-align: center;
