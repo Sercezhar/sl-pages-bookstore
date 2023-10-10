@@ -1,0 +1,19 @@
+<section class="companies">
+  <div class="companies__container">
+    <h3 class="h3">Trusted by the Best</h3>
+
+    <ul class="companies-list">
+      {% for company in companies %}
+      <li>
+        <svg class="companies-list__logo">
+          <use href="{{ company.logo }}"></use>
+        </svg>
+        <h5 class="h5">{{ company.name }}</h5>
+        <p class="companies-list__text">
+          {{ company.text }}
+        </p>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
