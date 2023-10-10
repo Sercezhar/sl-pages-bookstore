@@ -32,10 +32,14 @@
   }
 
   font-size: 45px;
-  @include adaptiveValue('font-size', 45, 34);
+  @include adaptiveValue('font-size', 45, 28);
+
+  &--white {
+    color: #fff;
+  }
 }
 .h4 {
-  @include adaptiveValue('font-size', 32, 26);
+  @include adaptiveValue('font-size', 32, 22);
 }
 .h5 {
   @include adaptiveValue('font-size', 24, 18);

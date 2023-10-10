@@ -1,7 +1,8 @@
 .button {
   position: relative;
   flex-shrink: 0;
-  width: 220px;
+  width: 100%;
+  max-width: 220px;
   height: 65px;
   color: var(--color-primary);
   background-color: var(--color-secondary);
@@ -12,6 +13,11 @@
   font-family: 'Cardo', serif;
   text-transform: capitalize;
   overflow: hidden;
+
+  @media (max-width: $mobileSmall) {
+    width: 200px;
+    height: 60px;
+  }
 
   &:not(
       .button--transparent-dark,
@@ -49,21 +55,17 @@
   &--transparent-dark {
     background-color: transparent;
     border: 1px solid var(--color-secondary);
+    transition: background-color 250ms $transitionBase;
+
+    &:hover {
+      background-color: rgba(180, 199, 231, 0.15);
+    }
   }
   &--transparent-white {
     color: #fff;
   }
   &--transparent-dark {
     color: var(--color-primary);
-    transition: background-color 250ms $transitionBase;
-
-    &:hover {
-      background-color: rgba(180, 199, 231, 0.15);
-    }
-
-    @media (max-width: $mobileMedium) {
-      width: 100%;
-    }
   }
 
   &--secondary,
@@ -73,7 +75,6 @@
     height: fit-content;
     font-size: 18px;
     background-color: transparent;
-    // border-bottom: 1px solid var(--color-primary);
     overflow: visible;
 
     &::after {
