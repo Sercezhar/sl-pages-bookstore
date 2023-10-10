@@ -77,5 +77,27 @@
       "text": "(+22) 123-4567-900",
       "link": "tel:(+22)123-4567-900"
     }
+  ],
+  "companies": [
+    {
+      "logo": "./images/icons.svg#icon-company-1",
+      "name": "Amazen Corp",
+      "text": "A long established fact that a who looking at its layout."
+    },
+    {
+      "logo": "./images/icons.svg#icon-company-2",
+      "name": "Megan Books",
+      "text": "A long established fact that a who looking at its layout."
+    },
+    {
+      "logo": "./images/icons.svg#icon-company-3",
+      "name": "Los Books",
+      "text": "A long established fact that a who looking at its layout."
+    },
+    {
+      "logo": "./images/icons.svg#icon-company-4",
+      "name": "Urban Lib",
+      "text": "A long established fact that a who looking at its layout."
+    }
   ]
 }
