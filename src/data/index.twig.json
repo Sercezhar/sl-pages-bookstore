@@ -19,5 +19,19 @@
         "length": "10 Hours"
       }
     }
+  ],
+  "counters": [
+    {
+      "title": "02",
+      "subtitle": "Books Published"
+    },
+    {
+      "title": "4.5",
+      "subtitle": "User Reviews"
+    },
+    {
+      "title": "04",
+      "subtitle": "Best Seller Awards"
+    }
   ]
 }
