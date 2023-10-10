@@ -1,0 +1,54 @@
+<section class="about">
+  <div class="about__container">
+    <div class="about__body">
+      <div class="about-image__wrapper">
+        <img class="about-image" src="./images/Home/about.jpg" alt="" />
+      </div>
+
+      <div class="about-content">
+        <h3 class="h3 h3--after-left">About Author</h3>
+        <p class="about-content__text">
+          All the Lorem Ipsum generators on the Internet tend to repeated
+          predefined chunks as necessary, making this the first true value
+          generator on the Internet. It uses a dictionary of over 200 Latin
+          words, combined with a handful.
+        </p>
+
+        <ul class="about-counter">
+          {% for counter in counters %}
+          <li class="about-counter__item">
+            <h4 class="about-counter__title">{{ counter.title }}</h4>
+            <p class="about-counter__subtitle">{{ counter.subtitle }}</p>
+          </li>
+          {% endfor %}
+        </ul>
+
+        <div class="about-details">
+          <img
+            class="about-details__qr"
+            src="./images/Home/qr-code.jpg"
+            alt="QR code"
+          />
+
+          <div>
+            <h6 class="h6">John Abraham, Ph.d</h6>
+            <ul>
+              <li>
+                <a
+                  class="about-details__link"
+                  href="mailto:johnabraham@gmail.com"
+                  >Mail : johnabraham@gmail.com</a
+                >
+              </li>
+              <li>
+                <a class="about-details__link" href="tel:(+2)1235459000"
+                  >Phone : (+2) 123 545 9000</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
