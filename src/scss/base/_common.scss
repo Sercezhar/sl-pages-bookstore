@@ -52,6 +52,10 @@
 .h6 {
   color: var(--color-secondary);
   @include adaptiveValue('font-size', 22, 16);
+
+  &--dark {
+    color: var(--color-primary);
+  }
 }
 
 .h2,
