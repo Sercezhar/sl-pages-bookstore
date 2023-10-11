@@ -51,5 +51,39 @@
       "index": "04",
       "text": "Analyze non-relational data using HBase, Cassandra, and MongoDB."
     }
+  ],
+  "chapters": [
+    {
+      "title": "Chapter 01 - Get Started Intro",
+      "text": "Making this the first true value generator on the Internet. It of over 200 Latin words, combined with a handful.",
+      "details": {
+        "pages": "92 pages",
+        "length": "1 hour 20 min"
+      }
+    },
+    {
+      "title": "Chapter 02 - Create a Massive Content",
+      "text": "Making this the first true value generator on the Internet. It of over 200 Latin words, combined with a handful.",
+      "details": {
+        "pages": "78 pages",
+        "length": "1 hour 10 min"
+      }
+    },
+    {
+      "title": "Chapter 03 - Maintaining the Creative Arcs",
+      "text": "Making this the first true value generator on the Internet. It of over 200 Latin words, combined with a handful.",
+      "details": {
+        "pages": "89 pages",
+        "length": "1 hour 15 min"
+      }
+    },
+    {
+      "title": "Chapter 04 - The Conclusion",
+      "text": "Making this the first true value generator on the Internet. It of over 200 Latin words, combined with a handful.",
+      "details": {
+        "pages": "81 pages",
+        "length": "1 hour 15 min"
+      }
+    }
   ]
 }
