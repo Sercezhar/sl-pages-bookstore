@@ -1,0 +1,47 @@
+<section class="testimonials">
+  <div class="testimonials__container">
+    <div class="testimonials__body">
+      <div class="testimonials-content">
+        <h3 class="h3 h3--after-left">What Readers Say About the Book</h3>
+        <p class="testimonials-content__text">
+          If you are going to use a passage of Lorem Ipsum, you need to be sure
+          there isn't anything embarrassing hidden in the middle of text. All
+          the Lorem Ipsum generators.
+        </p>
+
+        <div class="testimonials-rating">
+          <div class="testimonials-rating__icon">
+            {% include './../components/rating.twig' with {'classes':
+            'rating--lg'} %} (4.8/5)
+          </div>
+          <p>Overall Customer Ratings</p>
+        </div>
+      </div>
+
+      <ul class="testimonials-list">
+        {% for testimonial in testimonials %}
+        <li class="testimonials-list__item">
+          <div class="testimonials-client">
+            <img
+              class="testimonials-client__avatar"
+              src="{{ testimonial.client.avatar }}"
+              alt="avatar"
+            />
+            <div>
+              <h5 class="h5 h5--white">{{ testimonial.client.name }}</h5>
+              {% include './../components/rating.twig' %}
+            </div>
+          </div>
+
+          <div>
+            <h6 class="h6 h6--white">“ {{ testimonial.title }} ”</h6>
+            <p class="testimonials-list__text">
+              {{ testimonial.text }}
+            </p>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
