@@ -85,5 +85,31 @@
         "length": "1 hour 15 min"
       }
     }
+  ],
+  "testimonials": [
+    {
+      "client": {
+        "avatar": "./images/Home/testimonials/avatar-1.jpg",
+        "name": "Martin Philips"
+      },
+      "title": "Awesome Impact",
+      "text": "All the Lorem Ipsum generators on the Internet tend to repeat willings predefined chunks value."
+    },
+    {
+      "client": {
+        "avatar": "./images/Home/testimonials/avatar-2.jpg",
+        "name": "James Anderson"
+      },
+      "title": "Mind Blowing Words",
+      "text": "All the Lorem Ipsum generators on the Internet tend to repeat willings predefined chunks value."
+    },
+    {
+      "client": {
+        "avatar": "./images/Home/testimonials/avatar-3.jpg",
+        "name": "Christina Louis"
+      },
+      "title": "Great Books Collections",
+      "text": "All the Lorem Ipsum generators on the Internet tend to repeat willings predefined chunks value."
+    }
   ]
 }
