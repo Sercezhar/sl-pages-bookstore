@@ -85,6 +85,7 @@
 
   &--after-dark {
     &::after {
+      margin-top: 14px;
       background-color: var(--color-primary);
     }
   }
