@@ -99,5 +99,88 @@
       "name": "Urban Lib",
       "text": "A long established fact that a who looking at its layout."
     }
+  ],
+  "blogs": [
+    {
+      "image": "./images/blogs/blog-1.jpg",
+      "title": "Whispers of Words: Navigating the World of Literature",
+      "text": "The point of using Lorem Ipsum hiter of that using making it look like others readable will get end.",
+      "details": {
+        "author": "Emma",
+        "date": "13.10.2023"
+      }
+    },
+    {
+      "image": "./images/blogs/blog-2.jpg",
+      "title": "Enchanted Pages: A Sanctuary for Book Lovers",
+      "text": "The point of using Lorem Ipsum hiter of that using making it look like others readable will get end.",
+      "details": {
+        "author": "Olivia",
+        "date": "11.10.2023"
+      }
+    },
+    {
+      "image": "./images/blogs/blog-3.jpg",
+      "title": "Literary Journeys: Exploring the Tapestry of Stories",
+      "text": "The point of using Lorem Ipsum hiter of that using making it look like others readable will get end.",
+      "details": {
+        "author": "Liam",
+        "date": "7.10.2023"
+      }
+    },
+    {
+      "image": "./images/blogs/blog-4.jpg",
+      "title": "The Cognitive Compass: Mapping the Mind",
+      "text": "The point of using Lorem Ipsum hiter of that using making it look like others readable will get end.",
+      "details": {
+        "author": "Noah",
+        "date": "2.10.2023"
+      }
+    },
+    {
+      "image": "./images/blogs/blog-5.jpg",
+      "title": "Transforming Behavior for a Better You",
+      "text": "The point of using Lorem Ipsum hiter of that using making it look like others readable will get end.",
+      "details": {
+        "author": "Ethan",
+        "date": "29.09.2023"
+      }
+    },
+    {
+      "image": "./images/blogs/blog-6.jpg",
+      "title": "Understanding the Subconscious Mind",
+      "text": "The point of using Lorem Ipsum hiter of that using making it look like others readable will get end.",
+      "details": {
+        "author": "Harper",
+        "date": "22.10.2023"
+      }
+    },
+    {
+      "image": "./images/blogs/blog-7.jpg",
+      "title": "Cover to Cover Chronicles: A Book Lover's Odyssey",
+      "text": "The point of using Lorem Ipsum hiter of that using making it look like others readable will get end.",
+      "details": {
+        "author": "Amelia",
+        "date": "21.10.2023"
+      }
+    },
+    {
+      "image": "./images/blogs/blog-8.jpg",
+      "title": "Exploring Worlds in Ink and Paper",
+      "text": "The point of using Lorem Ipsum hiter of that using making it look like others readable will get end.",
+      "details": {
+        "author": "Ethan",
+        "date": "17.10.2023"
+      }
+    },
+    {
+      "image": "./images/blogs/blog-9.jpg",
+      "title": "Tales from the Bookshelf: Nourishing the Imagination",
+      "text": "The point of using Lorem Ipsum hiter of that using making it look like others readable will get end.",
+      "details": {
+        "author": "Olivia",
+        "date": "10.10.2023"
+      }
+    }
   ]
 }
