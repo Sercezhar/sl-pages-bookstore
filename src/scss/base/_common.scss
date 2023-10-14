@@ -24,7 +24,17 @@
   letter-spacing: -0.03em;
 }
 .h2 {
-  font-size: 50px;
+  margin-inline: auto;
+  color: #fff;
+  @include adaptiveValue('font-size', 50, 30);
+
+  &::after {
+    margin-top: 29px !important;
+
+    @media (max-width: $mobileSmall) {
+      margin-top: 19px !important;
+    }
+  }
 }
 .h3 {
   &:not(.h3--after-left) {
