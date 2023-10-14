@@ -1,0 +1,25 @@
+.hero-pages {
+  background-color: var(--color-primary);
+
+  &__container {
+    @include adaptiveValue('padding-top', 96, 80);
+    @include adaptiveValue('padding-bottom', 125, 96);
+
+    & .h2 {
+      margin-bottom: 28px;
+
+      @media (max-width: $mobileSmall) {
+        margin-bottom: 18px;
+      }
+    }
+  }
+
+  &__text {
+    box-sizing: content-box;
+    margin-inline: auto;
+    padding-inline: 16px;
+    max-width: 633px;
+    color: var(--color-text-blue);
+    text-align: center;
+  }
+}
