@@ -86,7 +86,7 @@
       transform: translateX(-50%);
       width: 100%;
       height: 1px;
-      background-color: #fff;
+      background-color: var(--color-primary);
       transition: width 250ms $transitionBase;
     }
 
@@ -97,5 +97,9 @@
   &--secondary-white {
     color: #fff;
     border-color: #fff;
+
+    &::after {
+      background-color: #fff;
+    }
   }
 }
