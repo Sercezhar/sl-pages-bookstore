@@ -1,0 +1,93 @@
+.newsletter {
+  &__container {
+    @include adaptiveValue('padding-bottom', 150, 96);
+
+    &--home {
+      padding-top: 96px;
+    }
+  }
+
+  &__body {
+    @include adaptiveValue('padding-block', 121, 80);
+    @include adaptiveValue('padding-inline', 32, 16);
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+
+    & .h3 {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__text {
+    margin-inline: auto;
+    @include adaptiveValue('padding-bottom', 38, 18);
+    max-width: 657px;
+    text-align: center;
+  }
+}
+
+.newsletter-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 11px;
+  min-height: 65px;
+
+  &__input,
+  &__button {
+    height: 65px;
+
+    @media (max-width: $mobileSmall) {
+      height: 55px;
+    }
+  }
+
+  &__input {
+    flex: 1 1 auto;
+    padding-inline: 24px;
+    min-width: 369px;
+    width: 1%;
+    max-width: 529px;
+    font-size: 17px;
+    outline: none;
+    border: 2px solid #fff;
+    transition: border-color 250ms $transitionBase;
+
+    @media (max-width: $mobileSmall) {
+      padding-inline: 16px;
+      min-width: 100%;
+    }
+
+    &:focus {
+      border-color: #1b3764;
+    }
+
+    &::placeholder {
+      opacity: 0.6;
+    }
+  }
+
+  &__button {
+    flex: 1;
+    min-width: 200px;
+    width: 100%;
+    max-width: 300px;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    font-family: 'Cardo', serif;
+    background-color: var(--color-primary);
+    border: 2px solid transparent;
+    transition: box-shadow 350ms $transitionBase;
+
+    &:hover {
+      box-shadow: inset 0px 0px 0px 2px #fff;
+    }
+
+    @media (max-width: $mobileMedium) {
+      max-width: 529px;
+    }
+  }
+}
