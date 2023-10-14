@@ -1,0 +1,100 @@
+.blog {
+  background-color: var(--color-off-white);
+
+  &__container {
+    @include adaptiveValue('padding-block', 145, 96);
+
+    & .h3 {
+      @include adaptiveValue('margin-bottom', 50, 32);
+    }
+  }
+}
+
+.blog-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 35px;
+  @include adaptiveValue('row-gap', 60, 32);
+
+  @media (max-width: $mobileMedium) {
+    flex-direction: column;
+  }
+
+  @media (max-width: $mobileSmall) {
+    align-items: center;
+  }
+}
+
+.blog-item {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 330px;
+  max-width: 410px;
+  background-color: #fff;
+  box-shadow: 0px 35px 25px rgba(4, 11, 20, 0.04);
+
+  @media (min-width: $mobileMedium) and (max-width: $tablet) {
+    max-width: 42.664%;
+  }
+
+  @media (min-width: $mobileSmall) and (max-width: $mobileMedium) {
+    flex-direction: row;
+  }
+
+  @media (max-width: $mobileMedium) {
+    min-width: 100%;
+  }
+
+  & img {
+    width: 100%;
+    @include adaptiveValue('height', 326, 156, $maxWidthContent, 991.98, 1);
+    max-height: 326px;
+    object-fit: cover;
+    object-position: top 25% left 25%;
+
+    @media (min-width: $mobileSmall) and (max-width: $mobileMedium) {
+      width: 40%;
+      height: auto;
+    }
+
+    @media (max-width: $mobileSmall) {
+      @include adaptiveValue('height', 156, 100, 479.98, 320);
+    }
+  }
+
+  & .h5 {
+    margin-bottom: 14px;
+    @include text-truncate-multi-line(2);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    @include adaptiveValue('padding-block', 27, 16);
+    @include adaptiveValue('padding-inline', 32, 16);
+    height: 100%;
+  }
+
+  &__text {
+    margin-bottom: 27px;
+    @include text-truncate-multi-line();
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    margin-top: auto;
+  }
+
+  &__details {
+    color: var(--color-primary);
+    @include adaptiveValue('font-size', 17, 14);
+    line-height: 1.25;
+    letter-spacing: normal;
+    @include text-truncate();
+  }
+}
