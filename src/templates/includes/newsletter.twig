@@ -1,5 +1,9 @@
 <section class="newsletter">
-  <div class="newsletter__container newsletter__container--home">
+  <div
+    class="newsletter__container {{
+      title == 'Home' ? 'newsletter__container--home' : ''
+    }}"
+  >
     <div class="newsletter__body">
       <h3 class="h3 h3--after-dark">Read a free chapter</h3>
 
