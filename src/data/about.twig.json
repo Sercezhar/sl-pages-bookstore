@@ -1,3 +1,21 @@
 {
-  "title": "About"
+  "title": "About",
+  "authorDetails": [
+    {
+      "title": "Country",
+      "text": "United Kingdom"
+    },
+    {
+      "title": "Language",
+      "text": "English"
+    },
+    {
+      "title": "Genre",
+      "text": "Historiography"
+    },
+    {
+      "title": "Publication date",
+      "text": "1991"
+    }
+  ]
 }
