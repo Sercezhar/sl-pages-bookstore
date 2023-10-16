@@ -1,0 +1,29 @@
+<section class="about-story">
+  <div class="about-story__container">
+    <div class="about-story-content">
+      <h3 class="h3 h3--after-left">My Story</h3>
+      <p class="about-story-content__text">
+        Making this the first true generator on the Internet. It uses a
+        dictionary of over 200 Latin words, combined with a handful of model
+        sentence structures.
+      </p>
+
+      <ul class="about-story-list">
+        {% for story in stories %}
+        <li class="about-story-item" data-index="0{{ loop.index }}">
+          <div>
+            <h5 class="h5">{{ story.title }}</h5>
+            <p class="about-story-item__text">{{ story.text }}</p>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <picture data-da=".about-story-content, 767.98, 2">
+      <source srcset="./images/About/story-sm.jpg" media="(max-width: 479px)" />
+      <source srcset="./images/About/story-md.jpg" media="(max-width: 767px)" />
+      <img class="about-story__image" src="./images/About/story.jpg" alt="" />
+    </picture>
+  </div>
+</section>
