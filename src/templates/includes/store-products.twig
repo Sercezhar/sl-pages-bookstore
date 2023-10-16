@@ -1,0 +1,38 @@
+<section class="products">
+  <div class="products__container">
+    <ul class="products-list">
+      {% for product in products %}
+      <li class="products-item" data-type="{{ product.type }}">
+        <div class="products-item__image-wrapper">
+          <img src="{{ product.image }}" alt="book cover" />
+          {% if product.type %}
+          <div class="products-type">
+            {% if product.type == 'audio' %}
+            <div class="products-type__audio">
+              <svg width="42" height="42">
+                <use href="./images/icons.svg#icon-audio"></use>
+              </svg>
+            </div>
+            {% elseif product.type == 'vinyl' %}
+            <img src="./images/vinyl.png" alt="vinyl" width="85" />
+            {% endif %}
+          </div>
+          {% endif %}
+        </div>
+
+        <div class="products-content">
+          <div class="products-content__header">
+            <h4 class="h4">{{ product.title }}</h4>
+            <p class="products-content__price">${{ product.price }}</p>
+          </div>
+
+          <p class="products-content__text">{{ product.text }}</p>
+          <p class="h5 li--bullet">Printed Books</p>
+          {% include './../components/button.twig' with {'text': 'Order Today',
+          'classes': 'button--transparent-dark'} %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
