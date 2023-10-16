@@ -1,0 +1,60 @@
+<section class="about-author">
+  <div class="about-author__container">
+    <picture>
+      <source
+        srcset="./images/About/author-sm.jpg"
+        media="(max-width: 479px)"
+      />
+      <source
+        srcset="./images/About/author-md.jpg"
+        media="(max-width: 767px)"
+      />
+      <img
+        class="about-author__image"
+        src="./images/About/author.jpg"
+        alt="a man in glasses with a cup in his hands"
+      />
+    </picture>
+
+    <div class="about-author__body">
+      <ul
+        class="about-author-details"
+        data-da=".about-author-content, 767.98, 2"
+      >
+        {% for authorDetail in authorDetails %}
+        <li class="about-author-details__item">
+          <h5 class="h5">{{ authorDetail.title }} :</h5>
+          <p>{{ authorDetail.text }}</p>
+        </li>
+        {% endfor %}
+
+        <li class="about-author-details__item">
+          <h5 class="h5">Share us on :</h5>
+          <ul class="about-author-details__socials">
+            {% for social in socials[:3] %}
+            <li>
+              <a href="{{ social.link }}">
+                <svg width="18" height="18">
+                  <use href="{{ social.icon }}"></use>
+                </svg>
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+        </li>
+      </ul>
+
+      <div class="about-author-content">
+        <h3 class="h3 h3--after-left">About Dr. John Abraham</h3>
+        <p class="about-author-content__text">
+          All the Lorem Ipsum generators on the Internet tend to repeat
+          predefined chunks as necessary, making this the first true generator
+          on the Internet. It uses a dictionary of over 200 Latin words, that
+          can combined with a handful of model sentence structures.
+        </p>
+
+        {% include './../components/button.twig' with {'text': 'Contact now'} %}
+      </div>
+    </div>
+  </div>
+</section>

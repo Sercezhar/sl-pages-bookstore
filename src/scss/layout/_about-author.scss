@@ -1,0 +1,115 @@
+.about-author {
+  background-color: var(--color-off-white);
+
+  &__container {
+    @include adaptiveValue('padding-top', 150, 64);
+    @include adaptiveValue('padding-bottom', 150, 96);
+  }
+
+  &__image {
+    @include adaptiveValue('margin-bottom', 80, 32);
+    width: 100%;
+    object-fit: cover;
+    object-position: top 15% left 0;
+    box-shadow: 0px 35px 45px rgba(4, 11, 20.19, 0.15);
+
+    @media (max-width: $mobileMedium) {
+      box-shadow: 0px 25px 35px rgba(4, 11, 20.19, 0.15);
+    }
+    @media (max-width: $mobileSmall) {
+      box-shadow: 0px 15px 25px rgba(4, 11, 20.19, 0.15);
+    }
+  }
+
+  &__body {
+    @media (min-width: $mobileMedium) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+    }
+  }
+}
+
+.about-author-details {
+  @include adaptiveValue('padding-block', 55, 25);
+  @include adaptiveValue('padding-inline', 65, 15);
+  width: 100%;
+  max-width: fit-content;
+  height: fit-content;
+  background-color: #fff;
+  border: 2px solid #dfe9f8;
+
+  @media (max-width: $mobileMedium) {
+    margin-bottom: 32px;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: minmax(175px, 219px) minmax(125px, 162px);
+    align-items: center;
+    gap: 6px;
+
+    @media (max-width: $tablet) {
+      grid-template-columns: minmax(175px, 190px) minmax(125px, 130px);
+    }
+
+    @media (max-width: $mobileMedium) {
+      grid-template-columns: minmax(145px, 219px) minmax(105px, 162px);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+
+    & li {
+      & a {
+        display: flex;
+
+        &:hover svg {
+          fill: var(--color-secondary);
+          transform: scale(1.25);
+        }
+      }
+
+      & svg {
+        fill: var(--color-primary);
+        transition: 250ms $transitionBase;
+        transition-property: fill, transform;
+      }
+    }
+  }
+}
+
+.about-author-content {
+  @include adaptiveValue('margin-right', 65, 0, $maxWidthContent, 1200, 1);
+
+  @media (max-width: $mobileMedium) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  & .h3 {
+    margin-bottom: 27px;
+    @include adaptiveValue('font-size', 45, 26);
+
+    &::after {
+      @media (max-width: $mobileMedium) {
+        margin-inline: auto;
+      }
+    }
+  }
+
+  &__text {
+    @include adaptiveValue('margin-bottom', 34, 24);
+    max-width: 607px;
+  }
+}
