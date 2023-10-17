@@ -1,4 +1,8 @@
 .books {
+  &--about {
+    background-color: var(--color-off-white);
+  }
+
   &__container {
     @include adaptiveValue('padding-block', 145, 96);
 
