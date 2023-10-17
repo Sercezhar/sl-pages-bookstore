@@ -1,0 +1,27 @@
+<section class="blog-articles">
+  <div class="blog-articles__container">
+    <ul class="blog-list">
+      {% for blog in blogs %}
+      <li class="blog-item">
+        <img src="{{ blog.image }}" alt="blog image" />
+        <div class="blog-item__content">
+          <h5 class="h5">{{ blog.title }}</h5>
+          <p class="blog-item__text">
+            {{ blog.text }}
+          </p>
+
+          <div class="blog-item__footer">
+            {% include './../components/button.twig' with {'text': 'Read more',
+            'classes': 'button--secondary'} %}
+
+            <div class="blog-item__details">
+              {{ blog.details.author }} -
+              {{ blog.details.date }}
+            </div>
+          </div>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
