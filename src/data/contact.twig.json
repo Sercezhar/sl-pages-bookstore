@@ -1,3 +1,23 @@
 {
-  "title": "Contact"
+  "title": "Contact",
+  "contacts": [
+    {
+      "icon": "./images/icons.svg#icon-house",
+      "title": "Visit Us",
+      "text": "9 West St, Boston, MA 02111, USA",
+      "link": "https://maps.app.goo.gl/hpoBwgyQXSYnawJA8"
+    },
+    {
+      "icon": "./images/icons.svg#icon-mail",
+      "title": "Email Us",
+      "text": "support@pages.com",
+      "link": "mailto:support@pages.com"
+    },
+    {
+      "icon": "./images/icons.svg#icon-phone-call",
+      "title": "Call Us",
+      "text": "Call: 1-800-123-9999",
+      "link": "tel:1-800-123-9999"
+    }
+  ]
 }
