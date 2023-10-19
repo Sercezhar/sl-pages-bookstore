@@ -1,0 +1,76 @@
+<section class="contact-stayintouch">
+  <div class="contact-stayintouch__container">
+    <div class="contact-stayintouch__content contact-stayintouch__column">
+      <h3 class="h3 h3--after-left">Keep in Touch</h3>
+      <p class="contact-stayintouch__text">
+        There are many variations of passages of Lorem Ipsum available, but the
+        majority have suffered alteration in some form, by injected humour, or
+        randomised words which don't look even slightly believable.
+      </p>
+
+      <ul>
+        {% for contact in contacts %}
+        <li class="stayintouch-item">
+          <div class="stayintouch-item__icon">
+            <svg>
+              <use href="{{ contact.icon }}"></use>
+            </svg>
+          </div>
+          <div>
+            <h5 class="h5">{{ contact.title }} :</h5>
+            <a class="stayintouch-item__link" href="{{ contact.link }}">
+              {{ contact.text }}
+            </a>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <form class="stayintouch-form contact-stayintouch__column">
+      <div class="stayintouch-form__body">
+        <div class="stayintouch-form__header">
+          <div class="stayintouch-form__input-wrapper">
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-user"></use>
+            </svg>
+            <input type="text" placeholder="Name" />
+          </div>
+
+          <div class="stayintouch-form__input-wrapper">
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+            <input type="email" placeholder="Email" required />
+          </div>
+        </div>
+
+        <div class="stayintouch-form__input-wrapper">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-phone"></use>
+          </svg>
+          <input type="text" placeholder="Phone" />
+        </div>
+
+        <div class="stayintouch-form__input-wrapper">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-edit"></use>
+          </svg>
+          <textarea cols="30" rows="8" placeholder="Message"></textarea>
+        </div>
+      </div>
+
+      <div class="stayintouch-form-subscribtion">
+        <label class="check">
+          <input class="check__input visually-hidden" type="checkbox" />
+          <span class="check__box"></span>
+          Keep me up to date with news and offers from time to time by email
+        </label>
+      </div>
+
+      <button class="stayintouch-form__submit" type="submit">
+        Send Message
+      </button>
+    </form>
+  </div>
+</section>
