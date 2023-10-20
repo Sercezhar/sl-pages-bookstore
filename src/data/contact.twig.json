@@ -19,5 +19,47 @@
       "text": "Call: 1-800-123-9999",
       "link": "tel:1-800-123-9999"
     }
+  ],
+  "faqs": [
+    {
+      "question": "Do you offer discounts for education?",
+      "answer": "Yes, we offer special discounts for educational institutions and students. Please contact our support team with details about your educational affiliation to learn more about our education pricing."
+    },
+    {
+      "question": "Is Hack Productivity available in stores?",
+      "answer": "Yes, Hack Productivity book is available on various online stores including Amazon, Google Play Books, and Apple Books."
+    },
+    {
+      "question": "What is Hack Productivity book about?",
+      "answer": "The Hack Productivity book is a comprehensive guide focused on boosting personal and professional productivity through practical techniques, innovative strategies, and insightful case studies. It covers topics ranging from time management and goal setting to effective communication and workflow optimization."
+    },
+    {
+      "question": "Where can I get Hack Productivity book?",
+      "answer": "You can purchase the Hack Productivity book from major online retailers such as Amazon, Google Play Books, Apple Books, and select local bookstores. Additionally, you may also find it available in e-book format on our official website."
+    },
+    {
+      "question": "Can I buy the book in physical format?",
+      "answer": "Yes, you can purchase the Hack Productivity book in both physical and e-book formats. It is available in paperback and hardcover editions, in addition to digital e-book versions."
+    },
+    {
+      "question": "Is there an audio version of the book?",
+      "answer": "Yes, we have an audiobook version of the Hack Productivity book available for those who prefer to listen to the content. It can be found on popular audiobook platforms such as Audible."
+    },
+    {
+      "question": "Any supplementary resources?",
+      "answer": "Yes, we provide a range of supplementary resources such as downloadable templates, worksheets, and video tutorials that are designed to enhance the concepts covered in the Hack Productivity book. These resources can be accessed through our official website."
+    },
+    {
+      "question": "Bulk Purchase Discounts?",
+      "answer": "Yes, we offer special pricing for bulk orders of the Hack Productivity book. Please contact our sales team for more information on bulk purchase options."
+    },
+    {
+      "question": "Do you provide consultations?",
+      "answer": "Yes, we offer personalized consultations and workshops tailored to the productivity principles discussed in the Hack Productivity book. Please reach out to our consulting team for more information on these services."
+    },
+    {
+      "question": "Are there plans to update the book?",
+      "answer": "Yes, we periodically release updated editions of the Hack Productivity book to incorporate the latest productivity techniques, tools, and best practices. Stay tuned for announcements regarding new editions."
+    }
   ]
 }
