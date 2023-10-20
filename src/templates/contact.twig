@@ -3,4 +3,9 @@
 {% block content %}
 	{% include './includes/hero-pages.twig' with {'pageTitle': 'Contact Us'} %}
 	{% include './includes/contact-stayintouch.twig' %}
+	{% include './includes/contact-faq.twig' %}
+{% endblock %}
+
+{% block scripts %}
+	<script src="./js/contact.min.js"></script>
 {% endblock %}
