@@ -1,0 +1,35 @@
+<section class="contact-faq">
+  <div class="contact-faq__container">
+    <h3 class="h3">Frequent Questions?</h3>
+
+    <div class="contact-faq__body">
+      <ul class="accordion">
+        {% for faq in faqs[:5] %}
+        <li class="accordion__item">
+          <div class="accordion-trigger">
+            <h5 class="h5">{{ faq.question }}</h5>
+          </div>
+
+          <div class="accordion-content">
+            <p class="accordion-content__text">{{ faq.answer }}</p>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+
+      <ul class="accordion">
+        {% for faq in faqs[5:] %}
+        <li class="accordion__item">
+          <div class="accordion-trigger">
+            <h5 class="h5">{{ faq.question }}</h5>
+          </div>
+
+          <div class="accordion-content">
+            <p class="accordion-content__text">{{ faq.answer }}</p>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>

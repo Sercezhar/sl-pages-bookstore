@@ -1,0 +1,98 @@
+.contact-faq {
+  background-color: var(--color-off-white);
+
+  &__container {
+    @include adaptiveValue('padding-block', 146, 96);
+  }
+
+  & .h3 {
+    margin-bottom: 30px;
+  }
+
+  &__body {
+    @media (min-width: $mobileMedium) {
+      display: flex;
+      justify-content: space-between;
+      gap: 32px;
+    }
+  }
+
+  & .accordion:last-of-type {
+    & li:last-child {
+      border: none;
+    }
+  }
+}
+
+// accordion list
+.accordion {
+  @media (min-width: $mobileMedium) {
+    max-width: 510px;
+  }
+
+  &__item {
+    padding-block: 24px;
+    border-bottom: 1px solid #1b376433;
+
+    &:last-child {
+      @media (min-width: $mobileMedium) {
+        border: none;
+      }
+    }
+
+    // accordion item active
+    &.accordion__item--active {
+      .accordion-trigger::before {
+        background-color: #fff;
+      }
+
+      .accordion-content {
+        grid-template-rows: 1fr;
+        padding-top: 8px;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+// accordion trigger
+.accordion-trigger {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    display: block;
+    flex-shrink: 0;
+    margin-right: 19px;
+    width: 14px;
+    height: 14px;
+    background-color: var(--color-secondary);
+    border: 3px solid var(--color-secondary);
+    border-radius: 50%;
+    transition: background-color 250ms $transitionBase;
+
+    @media (max-width: $tablet) {
+      margin-right: 11px;
+    }
+  }
+
+  & .h5 {
+    @include adaptiveValue('font-size', 24, 18, $maxWidthContent, 767.98);
+  }
+}
+
+// accordion content
+.accordion-content {
+  display: grid;
+  grid-template-rows: 0fr;
+  padding-left: 33px;
+  opacity: 0;
+  transition: 400ms $transitionBase;
+  transition-property: grid-template-rows, opacity, padding;
+
+  &__text {
+    overflow: hidden;
+  }
+}
