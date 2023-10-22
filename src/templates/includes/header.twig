@@ -34,12 +34,16 @@
         </ul>
       </nav>
 
-      <button class="cart" type="button" data-da=".header__buttons, 1129.98, 0">
+      <button
+        class="cart-btn"
+        type="button"
+        data-da=".header__buttons, 1129.98, 0"
+      >
         <svg width="24" height="24">
           <use href="./images/icons.svg#icon-cart"></use>
         </svg>
 
-        <div class="cart__qty">0</div>
+        <div class="cart-btn__qty">0</div>
       </button>
 
       {% include './../components/button.twig' with {'text': 'Order today',
