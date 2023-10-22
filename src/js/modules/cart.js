@@ -200,8 +200,6 @@ export function cart() {
     });
 
     cartQty.innerText = totalQty;
-
-    console.log(cartQtyAll);
   }
 
   function calcTotalPrice() {
@@ -241,18 +239,23 @@ export function cart() {
     const prodInList = document.querySelector(
       `.products-list [id="${productId}" ]`
     );
-    const prodInListBtn = prodInList.querySelector('.cart-add');
 
-    if (disable) {
-      prodInListBtn.disabled = true;
-      prodInListBtn.innerText = 'In Cart';
-      prodInListBtn.style.background = '#ffca42';
-      prodInListBtn.style.pointerEvents = 'none';
+    if (prodInList) {
+      const prodInListBtn = prodInList.querySelector('.cart-add');
+
+      if (disable) {
+        prodInListBtn.disabled = true;
+        prodInListBtn.innerText = 'In Cart';
+        prodInListBtn.style.background = '#ffca42';
+        prodInListBtn.style.pointerEvents = 'none';
+      } else {
+        prodInListBtn.disabled = false;
+        prodInListBtn.innerText = 'Add to Cart';
+        prodInListBtn.style.background = 'transparent';
+        prodInListBtn.style.pointerEvents = 'all';
+      }
     } else {
-      prodInListBtn.disabled = false;
-      prodInListBtn.innerText = 'Add To Cart';
-      prodInListBtn.style.background = 'transparent';
-      prodInListBtn.style.pointerEvents = 'all';
+      return;
     }
   }
 }

@@ -16,8 +16,8 @@
       <div class="cart__body">
         <div class="cart__notification">
           <h3>Cart is empty</h3>
-          {% include './../components/button.twig' with {'text': 'Go to Store'}
-          %}
+          {% include './../components/link-btn.twig' with {'text': 'Go to the
+          Store', 'link': './store.html'} %}
         </div>
         <ul class="cart-items"></ul>
       </div>
