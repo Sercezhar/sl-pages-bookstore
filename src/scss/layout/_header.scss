@@ -80,7 +80,7 @@
   &__backdrop {
     position: fixed;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(27, 55, 100, 0.8);
     opacity: 0;
     pointer-events: none;
     transition: opacity 150ms $transitionBase;
@@ -200,11 +200,11 @@
   margin: 0 44px -11px 26px;
   background-color: transparent;
   outline: none;
-  transition: margin-bottom 200ms $transitionBase;
+  transition: padding-bottom 200ms $transitionBase;
 
   &:hover,
   &:focus {
-    margin-bottom: 0;
+    padding-bottom: 11px;
   }
 
   @media (max-width: $menu) {
