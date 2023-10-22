@@ -35,6 +35,11 @@
       margin-top: 19px !important;
     }
   }
+
+  &--dark {
+    margin: 0;
+    color: var(--color-primary);
+  }
 }
 .h3 {
   &:not(.h3--after-left) {
@@ -97,6 +102,12 @@
     &::after {
       margin-top: 14px;
       background-color: var(--color-primary);
+    }
+  }
+
+  &--dark {
+    &::after {
+      content: none;
     }
   }
 }
