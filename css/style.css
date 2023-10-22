@@ -734,7 +734,6 @@ address {
   text-align: center;
 }
 .cart__notification .button, .cart__notification .stayintouch-form__submit, .cart__notification .chapters-callout__button, .cart__notification .link-btn {
-  display: block;
   margin-inline: auto;
   width: 100%;
   max-width: 100%;
