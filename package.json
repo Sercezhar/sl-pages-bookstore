@@ -1,8 +1,8 @@
 {
-  "name": "project-name",
+  "name": "sl-pages-bookstore",
   "version": "1.0.0",
   "main": "gulpfile.js",
-  "homepage": "https://sercezhar.github.io/project-name/",
+  "homepage": "https://sercezhar.github.io/sl-pages-bookstore/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "gulp",
