@@ -1,0 +1,206 @@
+{
+  "navigation": [
+    {
+      "title": "Home",
+      "link": "./index.html"
+    },
+    {
+      "title": "Store",
+      "link": "./store.html"
+    },
+    {
+      "title": "About",
+      "link": "./about.html"
+    },
+    {
+      "title": "Blog",
+      "link": "./blog.html"
+    },
+    {
+      "title": "Contact",
+      "link": "./contact.html"
+    }
+  ],
+  "socials": [
+    {
+      "icon": "./images/icons.svg#icon-facebook",
+      "link": "https://www.facebook.com/"
+    },
+    {
+      "icon": "./images/icons.svg#icon-twitter",
+      "link": "https://twitter.com/"
+    },
+    {
+      "icon": "./images/icons.svg#icon-linkedin",
+      "link": "https://www.linkedin.com/"
+    },
+    {
+      "icon": "./images/icons.svg#icon-instagram",
+      "link": "https://www.instagram.com/"
+    }
+  ],
+  "footerPages": [
+    {
+      "title": "Start here",
+      "link": "./index.html"
+    },
+    {
+      "title": "Style guide",
+      "link": "./index.html"
+    },
+    {
+      "title": "404 not found",
+      "link": "./index.html"
+    },
+    {
+      "title": "Licenses",
+      "link": "./index.html"
+    },
+    {
+      "title": "Changelog",
+      "link": "./index.html"
+    }
+  ],
+  "footerContacts": [
+    {
+      "title": "Address",
+      "text": "24 Kingston St, Boston, MA 02111, USA",
+      "link": "https://maps.app.goo.gl/pipT6mRrKKSxM7BJA"
+    },
+    {
+      "title": "Mail",
+      "text": "support@pages.com",
+      "link": "mailto:support@pages.com"
+    },
+    {
+      "title": "Phone",
+      "text": "(+22) 123-4567-900",
+      "link": "tel:(+22)123-4567-900"
+    }
+  ],
+  "books": [
+    {
+      "image": "./images/books/book-1.jpg",
+      "title": "Atomic One’s",
+      "description": "Many variations of passages of Lorem Ipsum willing araise alteration in some form.",
+      "details": {
+        "pages": "498 pages",
+        "length": "9 Hours"
+      }
+    },
+    {
+      "image": "./images/books/book-2.jpg",
+      "title": "The Dark Light",
+      "description": "Many variations of passages of Lorem Ipsum willing araise alteration in some form.",
+      "details": {
+        "pages": "586 pages",
+        "length": "10 Hours"
+      }
+    }
+  ],
+  "companies": [
+    {
+      "logo": "./images/icons.svg#icon-company-1",
+      "name": "Amazen Corp",
+      "text": "A long established fact that a who looking at its layout."
+    },
+    {
+      "logo": "./images/icons.svg#icon-company-2",
+      "name": "Megan Books",
+      "text": "A long established fact that a who looking at its layout."
+    },
+    {
+      "logo": "./images/icons.svg#icon-company-3",
+      "name": "Los Books",
+      "text": "A long established fact that a who looking at its layout."
+    },
+    {
+      "logo": "./images/icons.svg#icon-company-4",
+      "name": "Urban Lib",
+      "text": "A long established fact that a who looking at its layout."
+    }
+  ],
+  "blogs": [
+    {
+      "image": "./images/blogs/blog-1.jpg",
+      "title": "Whispers of Words: Navigating the World of Literature",
+      "text": "The point of using Lorem Ipsum hiter of that using making it look like others readable will get end.",
+      "details": {
+        "author": "Emma",
+        "date": "13.10.2023"
+      }
+    },
+    {
+      "image": "./images/blogs/blog-2.jpg",
+      "title": "Enchanted Pages: A Sanctuary for Book Lovers",
+      "text": "The point of using Lorem Ipsum hiter of that using making it look like others readable will get end.",
+      "details": {
+        "author": "Olivia",
+        "date": "11.10.2023"
+      }
+    },
+    {
+      "image": "./images/blogs/blog-3.jpg",
+      "title": "Literary Journeys: Exploring the Tapestry of Stories",
+      "text": "The point of using Lorem Ipsum hiter of that using making it look like others readable will get end.",
+      "details": {
+        "author": "Liam",
+        "date": "7.10.2023"
+      }
+    },
+    {
+      "image": "./images/blogs/blog-4.jpg",
+      "title": "The Cognitive Compass: Mapping the Mind",
+      "text": "The point of using Lorem Ipsum hiter of that using making it look like others readable will get end.",
+      "details": {
+        "author": "Noah",
+        "date": "2.10.2023"
+      }
+    },
+    {
+      "image": "./images/blogs/blog-5.jpg",
+      "title": "Transforming Behavior for a Better You",
+      "text": "The point of using Lorem Ipsum hiter of that using making it look like others readable will get end.",
+      "details": {
+        "author": "Ethan",
+        "date": "29.09.2023"
+      }
+    },
+    {
+      "image": "./images/blogs/blog-6.jpg",
+      "title": "Understanding the Subconscious Mind",
+      "text": "The point of using Lorem Ipsum hiter of that using making it look like others readable will get end.",
+      "details": {
+        "author": "Harper",
+        "date": "22.10.2023"
+      }
+    },
+    {
+      "image": "./images/blogs/blog-7.jpg",
+      "title": "Cover to Cover Chronicles: A Book Lover's Odyssey",
+      "text": "The point of using Lorem Ipsum hiter of that using making it look like others readable will get end.",
+      "details": {
+        "author": "Amelia",
+        "date": "21.10.2023"
+      }
+    },
+    {
+      "image": "./images/blogs/blog-8.jpg",
+      "title": "Exploring Worlds in Ink and Paper",
+      "text": "The point of using Lorem Ipsum hiter of that using making it look like others readable will get end.",
+      "details": {
+        "author": "Ethan",
+        "date": "17.10.2023"
+      }
+    },
+    {
+      "image": "./images/blogs/blog-9.jpg",
+      "title": "Tales from the Bookshelf: Nourishing the Imagination",
+      "text": "The point of using Lorem Ipsum hiter of that using making it look like others readable will get end.",
+      "details": {
+        "author": "Olivia",
+        "date": "10.10.2023"
+      }
+    }
+  ]
+}

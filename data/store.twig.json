@@ -1,0 +1,53 @@
+{
+  "title": "Store",
+  "products": [
+    {
+      "id": "1",
+      "image": "./images/books/book-1.jpg",
+      "title": "Atomic One’s",
+      "text": "Many variations of passages of Lorem Ipsum willing araise  alteration in some form.",
+      "price": "23.89",
+      "type": "print"
+    },
+    {
+      "id": "2",
+      "image": "./images/books/book-1.jpg",
+      "title": "Atomic One’s",
+      "text": "Many variations of passages of Lorem Ipsum willing araise  alteration in some form.",
+      "price": "13.89",
+      "type": "audio"
+    },
+    {
+      "id": "3",
+      "image": "./images/books/book-1.jpg",
+      "title": "Atomic One’s",
+      "text": "Many variations of passages of Lorem Ipsum willing araise  alteration in some form.",
+      "price": "33.89",
+      "type": "vinyl"
+    },
+    {
+      "id": "4",
+      "image": "./images/books/book-2.jpg",
+      "title": "The Dark Light",
+      "text": "Many variations of passages of Lorem Ipsum willing araise  alteration in some form.",
+      "price": "23.89",
+      "type": "print"
+    },
+    {
+      "id": "5",
+      "image": "./images/books/book-2.jpg",
+      "title": "The Dark Light",
+      "text": "Many variations of passages of Lorem Ipsum willing araise  alteration in some form.",
+      "price": "13.89",
+      "type": "audio"
+    },
+    {
+      "id": "6",
+      "image": "./images/books/book-2.jpg",
+      "title": "The Dark Light",
+      "text": "Many variations of passages of Lorem Ipsum willing araise  alteration in some form.",
+      "price": "33.89",
+      "type": "vinyl"
+    }
+  ]
+}
