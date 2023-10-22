@@ -26,8 +26,9 @@
               </div>
             </li>
           </ul>
-          {% include './../components/button.twig' with {'text': 'Order Today',
-          'classes': 'button--transparent-dark order-btn'} %}
+          {% include './../components/link-btn.twig' with {'text': 'Order
+          Today', 'link': './store.html', 'classes': 'button--transparent-dark
+          order-btn'} %}
         </div>
       </li>
       {% endfor %}

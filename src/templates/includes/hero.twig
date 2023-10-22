@@ -12,9 +12,10 @@
         </div>
 
         <div class="hero-buttons">
-          {% include './../components/button.twig' with {'text': 'Order today'}
-          %} {% include './../components/button.twig' with {'text': 'Read Free
-          Demo', 'classes': 'button--secondary-white'} %}
+          {% include './../components/link-btn.twig' with {'text': 'Order
+          today', 'link': './store.html'} %} {% include
+          './../components/link-btn.twig' with {'text': 'Read Free Demo',
+          'classes': 'button--secondary-white'} %}
         </div>
 
         <ul class="hero-details" data-da=".hero__container, 991.98, 2">
