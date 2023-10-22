@@ -2,7 +2,11 @@
   <div class="products__container">
     <ul class="products-list">
       {% for product in products %}
-      <li class="products-item" data-type="{{ product.type }}">
+      <li
+        class="products-item"
+        id="{{ product.id }}"
+        data-type="{{ product.type }}"
+      >
         <div class="products-item__image-wrapper">
           <img src="{{ product.image }}" alt="book cover" />
           {% if product.type %}
@@ -23,13 +27,15 @@
         <div class="products-content">
           <div class="products-content__header">
             <h4 class="h4">{{ product.title }}</h4>
-            <p class="products-content__price">${{ product.price }}</p>
+            <p class="products-content__price">
+              $<span>{{ product.price }}</span>
+            </p>
           </div>
 
           <p class="products-content__text">{{ product.text }}</p>
           <p class="h5 li--bullet">Printed Books</p>
-          {% include './../components/button.twig' with {'text': 'Order Today',
-          'classes': 'button--transparent-dark'} %}
+          {% include './../components/button.twig' with {'text': 'Add to Cart',
+          'classes': 'button--transparent-dark cart-add'} %}
         </div>
       </li>
       {% endfor %}
