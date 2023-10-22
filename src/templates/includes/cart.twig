@@ -1,0 +1,36 @@
+<div>
+  <div class="cart-backdrop"></div>
+
+  <div class="cart">
+    <div class="cart-container">
+      <div class="cart__header">
+        <h2 class="h2 h2--dark">Your Cart</h2>
+
+        <button class="cart-close" type="button">
+          <svg width="20" height="20">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="cart__body">
+        <div class="cart__notification">
+          <h3>Cart is empty</h3>
+          {% include './../components/button.twig' with {'text': 'Go to Store'}
+          %}
+        </div>
+        <ul class="cart-items"></ul>
+      </div>
+
+      <div class="cart__footer">
+        <div class="cart-total">
+          <p>Sub-Total</p>
+          <p class="cart-total__price">$ <span>0</span> USD</p>
+        </div>
+
+        {% include './../components/button.twig' with {'text': 'Continue to
+        Checkout', 'classes': 'cart-checkout'} %}
+      </div>
+    </div>
+  </div>
+</div>
