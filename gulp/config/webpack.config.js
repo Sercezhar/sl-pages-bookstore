@@ -3,7 +3,6 @@ const config = {
   mode: 'production',
   entry: {
     app: './src/js/app.js',
-    index: './src/js/index.js',
     contact: './src/js/contact.js',
   },
   output: {
