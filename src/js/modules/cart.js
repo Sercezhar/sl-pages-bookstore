@@ -7,7 +7,7 @@ export function cart() {
   const addToCartBtns = document.querySelectorAll('.cart-add');
   const body = document.querySelector('body');
 
-  const cartItems = JSON.parse(localStorage.getItem('products')) || [];
+  const cartItems = JSON.parse(localStorage.getItem('books')) || [];
 
   // render cart items
   cartItems.forEach(item => {
@@ -56,7 +56,7 @@ export function cart() {
 
       insertCartProduct(cartProduct);
       cartItems.push(cartProduct);
-      localStorage.setItem('products', JSON.stringify(cartItems));
+      localStorage.setItem('books', JSON.stringify(cartItems));
 
       toggleBtnStatus(productId);
       calcCartQty();
@@ -72,7 +72,7 @@ export function cart() {
 
       const newCartItems = cartItems.filter(item => item.id !== product.id);
       cartItems.splice(0, cartItems.length, ...newCartItems);
-      localStorage.setItem('products', JSON.stringify(newCartItems));
+      localStorage.setItem('books', JSON.stringify(newCartItems));
       product.remove();
 
       toggleBtnStatus(product.id, false);
@@ -113,7 +113,7 @@ export function cart() {
         ...cartItems[productIndex],
         quantity: quantityInput.value,
       };
-      localStorage.setItem('products', JSON.stringify(cartItems));
+      localStorage.setItem('books', JSON.stringify(cartItems));
     }
   });
 
